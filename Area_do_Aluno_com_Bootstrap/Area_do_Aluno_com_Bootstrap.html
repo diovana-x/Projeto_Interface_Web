@@ -7,7 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introdução ao CSS</title>
 
+    <!-- Importação do CSS com Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Importação jquery -->
+    <script src="js/jquery-3.6.1.js"></script>
+
+    <!-- Importar o js do Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        // Função inicial do JQUERY
+        // btn seleciona tudo
+        $(document).ready(function () {
+            $("#btn -topón").click(function (e) { 
+                e.preventDefault();
+                
+                // agora estamos ocutando algumas coisas
+                // jqhide e jqshow
+                $("#botoes").hide();
+                $("#link").hide();
+                $("#redes").hide();
+
+                $("#topo").show();
+                $("#barra").show();
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -18,15 +44,23 @@
 
         <div class="row">
             <!-- ESSA DIV É PARA A LINHA GRANDE QUE VAI GUARDAR ESSAS DUAS COLUNAS -->
+            <div class="col-lg-2"> 
+                <h3>Menu Lateral</h3> 
 
-            <div class="col-lg-3"> Menu Lateral
+                <button id="btn-topó" class="btn btn-sucess d-block mt-2">
+                    Botão 1
+                </button>
 
+                <button id="btn-aluno" class="btn btn-sucess d-block mt-2">
+                    Botão 2
+                </button>
+
+                <button id="btn-online" class="btn btn-sucess d-block mt-2">
+                    Botão 3
+                </button>
             </div>
 
             <div class="col-lg-9">
-
-                
-
                 <div>
                     <a href="https://paranavai.ifpr.edu.br"> CASINHA </a> / <span>Área do Aluno</span>
                 </div>
